@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+
+.header {
+  font-size: 4vw;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./photo/sky_tate.jpg);
+  background-size: cover;
+}
+/* .pc img {
+  width: 100vw;
+  max-width: none;
+  height: auto;
+} */
+.header p {
+  position: absolute;
+  top: 97%;
+  width: 100%;
+  left: 24%;
+}
+.header h3:first-of-type {
+  position: absolute;
+  top: 11%;
+  left: 5%;
+}
+
+.header h3:nth-of-type(2) {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+/* .pc {
+  display: none;
+}
+.sp {
+  width: 100%;
+} */
+.header img:last-of-type {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 20%;
+  transform: translate(-25%, -25%);
+}
+
+.box24 {
+  position: relative;
+  padding: 0.5em 0.7em;
+  margin: 2em 0;
+  background: #e6f4ff;
+  color: #5c98d4;
+  font-weight: bold;
+}
+.box24:after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+.box24 p {
+  margin: 0;
+  padding: 0;
+}
+
+/*パソコンで見る時 */
+@media screen and (min-width: 481px) {
+  .header {
+    font-size: 4vw;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./photo/sky_yoko.jpg);
+    background-size: cover;
+  }
+  .header h3,
+  p {
+    font-size: 15px;
+  }
+
+  /* .pc {
+    display: block;
+    width: 100%;
+  }
+  .sp {
+    display: none;
+  } */
+  img:nth-of-type(3) {
+    position: absolute;
+    top: 32%;
+    right: 10%;
+    width: 18%;
+  }
+  .header h3:nth-of-type(1) {
+    top: 7%;
+    left: 5%;
+  }
+
+  .header h3:nth-of-type(2) {
+    /* color: white;
+    position: absolute; */
+    top: 12%;
+    left: 5%;
+  }
+  .header h3:nth-of-type(3) {
+    top: 15%;
+    left: 5%;
+  }
+  .header p {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 50%;
+  }
+}
